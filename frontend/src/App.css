@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./background.png");
+  background-position: center;
+  background-size: cover;
+  font-family: "Work Sans", sans-serif;
+  color: #333;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Added width for better visibility */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5);
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker on hover */
+}
+
+/* General styling for buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Chat container styling */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Message area */
+.message-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Allow scrolling */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Message styling */
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message.sent {
+  background-color: #d1e7dd; /* Light green for sent messages */
+  align-self: flex-end; /* Align sent messages to the right */
+}
+
+.message.received {
+  background-color: #f8d7da; /* Light red for received messages */
+  align-self: flex-start; /* Align received messages to the left */
+}
+
+/* Input area styling */
+.input-area {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-area input:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+}
