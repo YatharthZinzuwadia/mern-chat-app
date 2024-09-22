@@ -1,7 +1,7 @@
 # MERN Chat Application
 This is a real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js). 
 It allows users to register, login, send messages in one-on-one chats or group chats, and includes features like group creation, message handling, and user management.
-
+built by : [Roadside Coders YT](https://www.youtube.com/playlist?list=PLKhlp2qtUcSZsGkxAdgnPcHioRr-4guZf)
 # Features
 User Authentication (Registration and Login)
 One-to-One and Group Chats
